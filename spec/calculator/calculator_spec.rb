@@ -10,6 +10,7 @@ describe Calculator do
       expect { subject.div(3, 0) }.to raise_error(ZeroDivisionError, 'divided by 0')
     end
   end
+
   context '#sum' do
     it 'with positive numbers' do
       result = subject.sum(8, 8)
@@ -20,5 +21,20 @@ describe Calculator do
       result = subject.sum(-8, 8)
       expect(result).to eq(0)
     end
+
+      
+    it 'with negative numbers' do
+      result = subject.sum(-5, 5)
+      expect(result).to eq(0)
+    end
+
+ 
   end
 end
+
+
+  
+
+
+
+
