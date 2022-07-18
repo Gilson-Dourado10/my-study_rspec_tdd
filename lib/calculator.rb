@@ -12,7 +12,15 @@ class Calculator
   def multiply(a,b)
     a*b
   end
+  def subtract(f,g)
+    f-g
+  end
+  def modulo
+    h % i
+  end
 end
+
+
 
 
 
