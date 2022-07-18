@@ -27,10 +27,19 @@ describe Calculator do
       result = subject.sum(-5, 5)
       expect(result).to eq(0)
     end
-
- 
   end
-end
+  context '#multiply' do
+    it 'with positive numbers' do
+     result = subject.multiply(2, 3)
+     expect(result).to eq(6)
+    end
+
+      it "with negative numbers" do
+        result = subject.multiply(-2,3)
+        expect(result).to eq(-6)
+      end
+    end
+  end
 
 
   
