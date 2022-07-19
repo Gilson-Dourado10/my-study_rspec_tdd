@@ -15,8 +15,14 @@ class Calculator
   def subtract(f,g)
     f-g
   end
-  def modulo
+  def modulo(h,i)
     h % i
+  end
+  def modulo(j ,l)
+    j%l
+  end
+  def div(m ,n)
+    m .div n
   end
 end
 

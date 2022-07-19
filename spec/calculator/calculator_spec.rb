@@ -2,7 +2,7 @@
 
 require 'calculator'
 
-describe Calculator do
+describe Calculator,'sobre a calculadora' do
   context '#div' do
     it 'divided by 0' do
       expect { subject.div(3, 0) }.to raise_error(ZeroDivisionError)
@@ -48,7 +48,20 @@ describe Calculator do
      context '#modulo' do
             it 'given two numbers' do
             result = subject.modulo(15 , 3)
-            expect(result).to eq(3)
+            expect(result).to eq(0)
+          end
+     end
+        context 'modulo'do
+          it 'given two numbers'do
+            result = subject.modulo(7,2 )
+            expect(result).to eq(1)
+          end
+
+          context 'div' do
+              it 'given two numbers' do
+              result = subject.div(5,2)
+              expect(result).to eql(2)
+            end
           end
         end
     end
